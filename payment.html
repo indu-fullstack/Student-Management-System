@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Payment Portal</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right,#f3e8ff,#e0c3fc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:white;
+    width:1000px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.college-name{
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+    color:#5a189a;
+    margin-bottom:15px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.search-box input{
+    padding:10px;
+    width:250px;
+    border-radius:20px;
+    border:1px solid #ccc;
+}
+
+.search-box button{
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#7b2cbf;
+    color:white;
+    cursor:pointer;
+}
+
+.section{
+    margin-bottom:25px;
+}
+
+.section h3{
+    color:#5a189a;
+    margin-bottom:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#7b2cbf;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.note{
+    background:#f8f3ff;
+    padding:15px;
+    border-left:5px solid #7b2cbf;
+    border-radius:10px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="college-name">
+        Vasireddy Venkatadri Reddy Institute of Technology
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Enter Student ID">
+        <button onclick="showPayment()">View Payment Details</button>
+    </div>
+
+    <!-- Hostel Registration -->
+    <div class="section">
+        <h3>Hostel Registration Fees</h3>
+        <p>₹ 3,000 (To be paid before hostel fee)</p>
+    </div>
+
+    <!-- Hostel Fees -->
+    <div class="section">
+        <h3>Ladies Hostel Fees</h3>
+        <table>
+            <tr>
+                <th>Hostel</th>
+                <th>Annual Fee</th>
+            </tr>
+            <tr>
+                <td>Ladies Hostel 1</td>
+                <td>₹ 1,00,000</td>
+            </tr>
+            <tr>
+                <td>Ladies Hostel 2</td>
+                <td>₹ 80,000</td>
+            </tr>
+            <tr>
+                <td>Ladies Hostel 3</td>
+                <td>₹ 80,000</td>
+            </tr>
+        </table>
+
+        <div class="note">
+            • Single Installment: No extra charges.<br>
+            • Double Installment: Half of hostel fee + ₹ 3,000 extra processing charge.
+        </div>
+    </div>
+
+    <!-- Bus Fees -->
+    <div class="section">
+        <h3>Bus Fees</h3>
+        <table>
+            <tr>
+                <th>Route</th>
+                <th>Fee</th>
+            </tr>
+            <tr><td>Guntur</td><td>₹ 18,000</td></tr>
+            <tr><td>Vijayawada</td><td>₹ 22,000</td></tr>
+            <tr><td>Tenali</td><td>₹ 20,000</td></tr>
+            <tr><td>Chilakaluripeta</td><td>₹ 17,000</td></tr>
+            <tr><td>Mangalagiri</td><td>₹ 19,000</td></tr>
+        </table>
+    </div>
+
+    <!-- Other Fees -->
+    <div class="section">
+        <h3>Other Fees</h3>
+        <table>
+            <tr><td>Books Fee</td><td>₹ 5,000</td></tr>
+            <tr><td>Lab Materials</td><td>₹ 5,000</td></tr>
+            <tr><td>University Fee</td><td>₹ 3,000</td></tr>
+        </table>
+    </div>
+
+    <!-- College Fees -->
+    <div class="section">
+        <h3>College Tuition Fees</h3>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Annual Fee</th>
+            </tr>
+            <tr>
+                <td>Government Quota</td>
+                <td>As per Government Norms</td>
+            </tr>
+            <tr>
+                <td>Management Quota</td>
+                <td>₹ 3,00,000 per year</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+<script src="payment.js"></script>
+</body>
+</html>

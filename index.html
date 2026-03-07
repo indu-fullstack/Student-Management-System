@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+  background-image: url("https://farm66.staticflickr.com/65535/51533530542_812abec0cf_o.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.college-header{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.college-header h2{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.college-header h3,
+.college-header h4{
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+ background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  height: 40px;              
+  line-height: 50px;         
+  z-index: 5;
+  text-align: center;
+}
+
+
+nav a{
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  gap:10px;
+  font-style: italic;
+}
+
+nav a:hover{
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.content{
+  position: relative;
+  z-index: 2;
+  padding: 150px 130px;
+  color: white;
+}
+
+.content h1{
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.content h3{
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 25px;
+}
+
+.join-btn{
+  display: inline-block;
+  margin-top: 30px;
+  background: #0a4d8c;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.join-btn:hover{
+  background: #083b6b;
+}
+.middle-section{
+  background: #ffffff;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.middle-section h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.middle-section p{
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.features{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card{
+  background: #0a4d8c;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 220px;
+  font-size: 18px;
+}
+.card{
+  background: #0a4d8c;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 220px;
+  font-size: 18px;
+}
+
+.card a{
+  color: white;
+  text-decoration: none;
+}
+.bottom-section{
+  background: #0a4d8c;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+  @media (max-width: 480px) {
+    .form-box {
+        padding: 12px;
+    }
+
+    .form-box h2 {
+        font-size: 18px;
+    }
+
+    .form-box input,
+    .form-box button {
+        font-size: 13px;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-box {
+        width: 60%;
+        padding: 30px;
+    }
+
+    .form-box h2 {
+        font-size: 24px;
+    }
+}
+@media (min-width: 1024px) {
+    .form-box {
+        width: 105%;
+        padding-left: 0;
+        padding-top: 0;
+  margin: auto;
+    }
+
+    .form-box h2 {
+        font-size: 28px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+  <div class="form-box">
+<div class="main">
+  <div class="college-header">
+    <h2>VASIREDDY AND VENKATADRIREDDY INSTITUTE OF TECHNOLOGICAL UNIVERSITY</h2>
+    <h3>Andhra Pradesh, Guntur Dist, 522002</h3>
+    <h4>Approved by NAAC – A++ Grade</h4>
+  </div>
+  <nav>
+    <a href="registration.html" target="_blank">Register</a>
+    <a href="login.html" target="_blank">Login</a>
+    <a href="dashboard.html" target="_blank">Dashboard</a>
+    <a href="about.html" target="_blank">About</a>
+    <a href="logout.html" target="_blank">Logout</a>
+    <a href="help.html" target="_blank">Help</a>
+    <a href="contact.html" target="_blank">Contact</a>
+  </nav>
+  <div class="content">
+    <h1>Learn Lead Succeed</h1>
+    <h3>
+      Your learning journey continues today.  <br>
+      Our goal is to simplify the learning experience and help students
+      stay focused, organized, and motivated.
+    </h3>
+    <a href="login.html" class="join-btn">Join Now</a>
+  </div>
+
+</div>
+<section class="middle-section">
+  <h2>Why Choose Our University?</h2>
+  <p>
+    We provide quality education, expert faculty, modern infrastructure,
+    and a student-friendly learning environment.
+  </p>
+
+  <div class="features">
+    <div class="card"><a href="library.html" target="_blank">📚 Digital Library</a></div>
+    <div class="card"><a href="faculty.html" target="_blank">🧑‍🏫 Expert Faculty</a></div>
+    <div class="card"><a href="class.html" target="_blank">💻 Smart Classrooms</a></div>
+  </div>
+</section>
+<section class="bottom-section">
+<marquee><p>2026 vvit University,All reseved</p></marquee>
+</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:whitesmoke
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap:75px;
+    color:white;
+}
+.omg{
+    width:13%;
+    border:1px solid white;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color:black;
+    
+}
+img{
+    border-radius: 50%;
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    background: transparent;
+}
+nav a{
+    display:block;
+    gap:30px;
+    color:white;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 21px;
+}
+.imgnav{
+    display:inline;
+}
+input{
+    width:350px;
+    height:35px;
+    border-radius: 30px;
+}
+.oop{
+    height:150px;
+    width:1250px;
+    border-radius: 20px;
+
+}
+.content{
+    display:flex;
+    gap:20px;
+    color:black;
+}
+.attendence{
+    width:300px;
+    height:150px;
+    border:2px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    gap:0px;
+}
+.result{
+    width:300px;
+    height:150px;
+    border:2px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    gap:0px;
+}
+.schedule{
+    width:300px;
+    height:150px;
+    border:2px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    gap:0px;
+}
+.courses{
+    display:flex;
+    gap:20px;
+}
+.frontend{
+    width:300px;
+    height:150px;
+    border:2px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    gap:0px;
+}
+.backend{
+    width:300px;
+    height:150px;
+    border:2px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    gap:0px;
+}
+.db{
+    width:300px;
+    height:150px;
+    border:2px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    gap:0px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}

@@ -1,0 +1,194 @@
+<html>
+    <head>
+         <title>Registration form</title>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+            body{
+                display:flex;
+                justify-content: center;
+                margin-left: 90px;
+                margin-top:50px;
+                background-image: url("https://i.pinimg.com/1200x/bd/c0/29/bdc0292eb3e02d183ba3845abc7c21ee.jpg");
+                background-position: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                color:white;
+                font-size:24px;
+            }
+            label {
+                 font-size: 24px;      
+                 width: 200px; 
+                 display: inline-block; 
+                 border-radius: 20px;
+                 line-height:35px;
+}
+               #register input{
+                width:200px;
+                height:30px;
+                border-radius:5px;
+               }
+               #register select{
+                width:150px;
+                height:30px;
+                 margin-bottom: 15px;
+               }
+            .demo{
+                width:450px;
+                height:1100px;
+                border-radius: 20px;
+                font-style: italic;
+                font-weight:inherit;
+               
+            }
+            .row {
+  display: flex;
+  gap: 20px;              
+  margin-bottom: 15px;
+}
+
+.row select {
+  width: 300px;
+  height: 45px;
+}
+            #submit{
+                text-align: center;
+                margin-left: 180px;
+                width:80px;
+                height:40px;
+                border-radius: 40px;
+            }
+            #adress{
+                width:30px;
+                height:35px;
+                text-align: center;
+                background-color: beige;
+            }
+            #addres{
+                width:300px;
+                height:80px;
+            }
+            submit:hover{
+                color: lightblue;
+            }
+            submit:active{
+                color:hotpink;
+            }
+            @media (max-width: 480px) {
+    .form-box {
+        padding: 12px;
+    }
+
+    .form-box h2 {
+        font-size: 18px;
+    }
+
+    .form-box input,
+    .form-box button {
+        font-size: 13px;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-box {
+        width: 60%;
+        padding: 30px;
+    }
+
+    .form-box h2 {
+        font-size: 24px;
+    }
+}
+@media (min-width: 1024px) {
+    .form-box {
+        width: 40%;
+        padding: 40px;
+    }
+
+    .form-box h2 {
+        font-size: 28px;
+    }
+}
+         </style>
+    </head>
+    <body>
+        <div class="form-box">
+        <form id="register">
+            <main>
+        <fieldset class="demo">
+            <h1 align="center"><font face="vivaldi" color="white">Register Now</font></h1>
+            <label for="name">Student name:</label>
+            <input type="text" id="fname" autofocus required placeholder="Student-name"><br><br>
+            <label for="names">Father name:</label>
+            <input type="text" id="lname" autofocus required placeholder="father-name"><br><br>
+            <label for="birth">Date-of-birth:</label>
+            <input type="date" id="dobb" autofocus required><br><br>
+            <label for="phone">Student Mobile Number:</label>
+            <input type="tel" id="phn" autofocus required placeholder="xxxxxxxxxx" ><br><br>
+            <label for="phones">Father Mobile Number:</label>
+            <input type="tel" id="phno" autofocus required placeholder="xxxxxxxxxx" ><br><br>
+            <label for="email">Student-Email:</label>
+            <input type="email" id="mail" autofocus required><br><br>
+            <label for="word">Password:</label>
+            <input type="password" id="pass" autofocus required placeholder=".........."><br><br>
+            <div class="row">
+            <select id="gender">
+                <option value="Male">Choose gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+            </select>
+             <select id="course">
+                <option value="Male">course</option>
+                <option value="one">MBA</option>
+                <option value="two">Btech</option>
+                <option value="three">Mtech</option>
+                <option value="four">Other</option>
+            </select></div>
+            <div class="row">
+            <select id="dept">
+                <option value="dept">Department</option>
+                <option value="cse">Computer Science Enginnering(CSE)</option>
+                <option value="ai">Artificial Intelligence(AI)</option>
+                <option value="ml">Machine Learning(ML)</option>
+                <option value="it">Information of Technology Engineering(IT)</option>
+                <option value="cs">Cyber Security(CS)</option>
+                <option value="ece">Electronics and Electrical Engineering(ECE)</option>
+                <option value="eee">Electrical Engineering(EEE)</option>
+                <option value="civ">Civil Engineering(CIV)</option>
+                <option value="mech">Mechanical Engineering(Mech)</option>
+            </select>
+            <select id="year">
+                <option value="Male">Choose year</option>
+                <option value="one">1 year</option>
+                <option value="two">2 year</option>
+                <option value="three">3 year</option>
+                <option value="four">4 year</option>
+            </select></div>
+            <select id="section">
+                <option value="ss">section</option>
+                <option value="as">A section</option>
+                <option value="bs">B section</option>
+                <option value="cs">C section</option>
+                <option value="ds">D section</option>
+                <option value="es">E section</option>
+                <option value="fs">F section</option>
+                <option value="gs">G section</option>
+                <option value="hs">H section</option>
+                <option value="is">I section</option>
+                <option value="js">J section</option>
+            </select><br>
+            <h1 style="font-size: 20px;">Address:</h1>
+            <textarea id="address" spellcheck="false"></textarea><br>
+            <h1 style="font-size: 20px;">Permanent Address:</h1>
+            <textarea id="addres" spellcheck="false"></textarea><br><br>
+            <button type="submit" id="submit">submit</button>
+        </fieldset>
+        </main>
+    </form>
+    </div>
+    <script src="register.js"></script>
+    </body>
+</html>

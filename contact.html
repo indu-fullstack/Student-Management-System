@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Page</title>
+
+<style>
+
+/* 🌈 Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(hotpink,pink,lightpink,lightblue,skyblue,blue);
+}
+.form-box {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: white;
+}
+
+.second {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.third {
+    flex: 1;
+    min-width: 300px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+
+button {
+    padding: 10px 20px;
+    background: #00c853;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00e676;
+}
+
+#successMsg {
+    display: none;
+    color: #ffff00;
+    margin-top: 10px;
+}
+
+.seven {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-map {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-map img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+a {
+    color: #ffff00;
+    text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="form-box">
+
+<h1>Contact Us</h1>
+
+<div class="second">
+
+<!-- FORM -->
+<form id="contactForm" class="third">
+
+<h2>Leave us a Message</h2>
+
+<input type="text" id="name" placeholder="Name" required>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<input type="text" id="subject" placeholder="Subject" required>
+
+<textarea id="message" placeholder="Write your message here" required></textarea>
+
+<button type="submit">Submit</button>
+
+<p id="successMsg">Successfully Submitted ✅</p>
+
+</form>
+
+</div>
+
+<!-- CONTACT DETAILS + MAP IMAGE -->
+<div class="seven">
+
+<div class="contact-text">
+<h3>📞 Phone</h3>
+<p><a href="tel:+919871220023">+91 98712 20023</a></p>
+
+<h3>✉ Email</h3>
+<p><a href="mailto:vvit@gmail.com">vvit@gmail.com</a></p>
+
+<h3>📍 Address</h3>
+<p>VVIT, Nambur, Guntur<br>Andhra Pradesh - 522508</p>
+</div>
+
+<div class="contact-map">
+<img src="https://cache.careers360.mobi/media/colleges/staticmap/2026/1/16/2712.png">
+</div>
+
+</div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const contactData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
+        };
+
+        let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+
+        contacts.push(contactData);
+
+        localStorage.setItem("contacts", JSON.stringify(contacts));
+
+        document.getElementById("successMsg").style.display = "block";
+
+        form.reset();
+    });
+
+});
+</script>
+
+</body>
+</html>

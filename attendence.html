@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right,#f3e8ff,#e0c3fc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:white;
+    width:950px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.title{
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    color:#5a189a;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:25px;
+}
+
+th{
+    background:#7b2cbf;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+/* Summary */
+.summary-box{
+    padding:20px;
+    background:#f8f3ff;
+    border-left:5px solid #7b2cbf;
+    border-radius:10px;
+    color:#5a189a;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">
+        Attendance Record
+    </div>
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Type</th>
+            <th>Conducted</th>
+            <th>Attended</th>
+            <th>Percentage</th>
+        </tr>
+
+        <!-- Theory Subjects -->
+        <tr><td>Java</td><td>Theory</td><td>30</td><td>27</td><td>90%</td></tr>
+        <tr><td>DBMS</td><td>Theory</td><td>28</td><td>23</td><td>82%</td></tr>
+        <tr><td>OS</td><td>Theory</td><td>26</td><td>23</td><td>88%</td></tr>
+        <tr><td>CN</td><td>Theory</td><td>25</td><td>20</td><td>80%</td></tr>
+        <tr><td>DS</td><td>Theory</td><td>27</td><td>22</td><td>81%</td></tr>
+
+        <!-- Labs -->
+        <tr><td>Java Lab</td><td>Lab</td><td>15</td><td>14</td><td>93%</td></tr>
+        <tr><td>DBMS Lab</td><td>Lab</td><td>14</td><td>13</td><td>92%</td></tr>
+        <tr><td>Web Lab</td><td>Lab</td><td>16</td><td>15</td><td>94%</td></tr>
+
+        <!-- DTI Lab -->
+        <tr><td>DTI Lab</td><td>Lab</td><td>12</td><td>11</td><td>91%</td></tr>
+
+    </table>
+
+    <div class="summary-box">
+        Total Classes Conducted: 193 <br>
+        Total Classes Attended: 168 <br>
+        Overall Attendance Percentage: 87%
+    </div>
+
+</div>
+
+</body>
+</html>

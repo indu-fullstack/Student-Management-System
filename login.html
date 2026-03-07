@@ -1,0 +1,185 @@
+<html>
+    <head>
+         <title>Login form</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content=width="width=device-width,intial-scale=1.0">
+        <style>
+            body{
+                display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://cdn.wallpapersafari.com/93/75/bazxhP.jpg");
+        background-position: left;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 250px;
+            }
+            fieldset{
+        width:400px;
+        height:380px;
+        border-radius:20px;
+     } 
+     #login-form{
+        padding-top: 300px;
+     }
+     #login-box {
+  animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+          #mail{
+            border-radius: 20px;
+            width: 300px;
+            height:40px;
+            border-color: black;
+            background-color:beige;
+     }  
+      #password{
+            border-radius: 20px;
+            width: 300;
+            height:40px;
+            border-color: black;
+             background-color:beige;
+     } 
+     #demo1
+     {
+        float: left;
+        margin:0;
+        color:white;
+        padding-left: 40px;
+     }
+     #demo2,a{
+        float:right;
+        margin:0;
+        color:white;
+        padding-right: 40px;
+        padding-top: 10px;
+        text-decoration: none;
+     }
+     footer {
+  text-align: center;
+  clear: both;
+  margin-top: 20px;
+}
+
+#button {
+  width: 120px;
+  height: 40px;
+  width:180px;
+  height:40px;
+  border-radius: 20px;
+  font-style: italic;
+}
+p{
+    color:white;
+    font-size: 20px;
+    padding-bottom: 100px;
+}
+#register{
+    border: 2px solid white;
+    border-radius: 25px;
+justify-content: center;
+padding: 10px;
+height:20px;
+padding-bottom:5px;
+margin-top: 10px;
+
+}
+#box{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+  @media (max-width: 480px) {
+    .form-box {
+        padding: 12px;
+    }
+
+    .form-box h2 {
+        font-size: 18px;
+    }
+
+    .form-box input,
+    .form-box button {
+        font-size: 13px;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-box {
+        width: 60%;
+        padding: 30px;
+    }
+
+    .form-box h2 {
+        font-size: 24px;
+    }
+}
+@media (min-width: 1024px) {
+    .form-box {
+        width: 40%;
+        padding: 40px;
+    }
+
+    .form-box h2 {
+        font-size: 28px;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="form-box">
+        <form id="login-form">
+        <fieldset align="center" id="login-box">
+        <div align="center">
+            <center>
+                <div id="demo">
+                    <header>
+                        <h1><font color="white" face="vivaldi">Login</font></h1>
+                    </header>
+                <label for="fname" id="name1"></label>
+                <input type="email" id="mail" autofocus required placeholder="  Username                                                       👤"><br><br>
+                </div>
+                <div>
+                <label for="fname" id="name2"></label>
+                <input type="password" id="password" autofocus required placeholder="   password                                                      🔒" autofocus>
+                </div>
+                </center>
+                </div>
+                <main>
+                    <div id="demo1">
+                    <h3><input type="checkbox" value="remeber">
+                    <label for="remember">Remember me</label></h3>
+                    </div>
+                    <div id="demo2">
+                        <a href="forgot.html">Forgot password</a>
+                    </div>
+                </main>
+                <footer>
+                    <div>
+                <input type="submit" id="button" value="login">
+                </div>
+                    <div id="box">
+                        <b><p>Dont you have an account ?/</p></b>
+                            <a href="registration.html" id="register">Register</a>
+                    </div>
+                    </footer>
+        </fieldset>
+        </form>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>

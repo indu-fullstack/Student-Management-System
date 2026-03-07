@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Semester Schedule</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right,#f3e8ff,#e0c3fc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:white;
+    width:900px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.title{
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    color:#5a189a;
+    margin-bottom:30px;
+}
+
+/* Timeline Style */
+.timeline{
+    border-left:4px solid #7b2cbf;
+    padding-left:20px;
+}
+
+.event{
+    margin-bottom:25px;
+    position:relative;
+}
+
+.event::before{
+    content:"";
+    width:14px;
+    height:14px;
+    background:#7b2cbf;
+    border-radius:50%;
+    position:absolute;
+    left:-27px;
+    top:5px;
+}
+
+.event h4{
+    color:#5a189a;
+    margin-bottom:5px;
+}
+
+.event span{
+    font-size:14px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">
+        Next Semester Academic Schedule (2026)
+    </div>
+
+    <div class="timeline">
+
+        <div class="event">
+            <h4>Semester Begins</h4>
+            <span>June 10, 2026</span>
+        </div>
+
+        <div class="event">
+            <h4>First Mid Examination</h4>
+            <span>August 5 – August 10, 2026</span>
+        </div>
+
+        <div class="event">
+            <h4>Lab Internal Exams</h4>
+            <span>September 1 – September 5, 2026</span>
+        </div>
+
+        <div class="event">
+            <h4>Second Mid Examination</h4>
+            <span>October 1 – October 6, 2026</span>
+        </div>
+
+        <div class="event">
+            <h4>External Lab Examinations</h4>
+            <span>November 15 – November 20, 2026</span>
+        </div>
+
+        <div class="event">
+            <h4>End Semester Exams</h4>
+            <span>December 5 – December 20, 2026</span>
+        </div>
+
+        <div class="event">
+            <h4>Semester Ends</h4>
+            <span>December 22, 2026</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

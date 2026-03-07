@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right,#f3e8ff,#e0c3fc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:white;
+    width:1000px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.title{
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    color:#5a189a;
+    margin-bottom:25px;
+}
+
+/* Section */
+.section{
+    margin-bottom:30px;
+}
+
+.section h3{
+    color:#5a189a;
+    margin-bottom:10px;
+}
+
+/* Grid Cards */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#f8f3ff;
+    padding:20px;
+    border-radius:10px;
+    border-left:5px solid #7b2cbf;
+}
+
+.card h4{
+    color:#5a189a;
+    margin-bottom:8px;
+}
+
+/* Quote */
+.quote{
+    background:#7b2cbf;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    font-style:italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">
+        Course Overview & Learning Path
+    </div>
+
+    <!-- Programming Languages Importance -->
+    <div class="section">
+        <h3>Importance of Programming Languages</h3>
+        <p>
+            Programming languages are the foundation of software development. 
+            They help students build logical thinking, problem-solving skills, 
+            and real-world applications. Languages like C, Java, and Python 
+            are essential for developing strong technical fundamentals.
+        </p>
+    </div>
+
+    <!-- Course Categories -->
+    <div class="section">
+        <h3>Course Categories</h3>
+
+        <div class="grid">
+
+            <div class="card">
+                <h4>Frontend Development</h4>
+                <p>Includes HTML, CSS, JavaScript. Focuses on designing user interfaces and improving user experience.</p>
+            </div>
+
+            <div class="card">
+                <h4>Backend Development</h4>
+                <p>Includes Java, APIs, Server-side logic. Handles data processing and application functionality.</p>
+            </div>
+
+            <div class="card">
+                <h4>Database Management</h4>
+                <p>Includes SQL, DBMS concepts. Responsible for storing, retrieving, and managing data efficiently.</p>
+            </div>
+
+            <div class="card">
+                <h4>Artificial Intelligence & Machine Learning</h4>
+                <p>Focuses on intelligent systems, predictive models, automation, and real-world AI applications.</p>
+            </div>
+
+            <div class="card">
+                <h4>Data Science</h4>
+                <p>Involves data analysis, visualization, and extracting meaningful insights from large datasets.</p>
+            </div>
+
+            <div class="card">
+                <h4>Core Programming</h4>
+                <p>Includes C, C++, Java fundamentals, Data Structures, and Algorithm design.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Motivational Quote -->
+    <div class="quote">
+        "Learning to code is learning to create and innovate for the future."
+    </div>
+
+</div>
+
+</body>
+</html>

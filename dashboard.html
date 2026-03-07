@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Professional Student Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4c3d1d6a2b.js" crossorigin="anonymous"></script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f3e8ff;
+}
+
+/* Layout */
+.container{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    min-height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+    background:linear-gradient(to bottom,#5a189a,#7b2cbf);
+    color:white;
+    padding:30px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:40px;
+}
+
+.logo i{
+    margin-right:10px;
+}
+ul li a{
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+}
+
+.menu{
+    list-style:none;
+}
+
+.menu li{
+    margin:20px 0;
+    cursor:pointer;
+    transition:0.3s;
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+}
+
+.menu li i{
+    margin-right:10px;
+}
+
+.menu li:hover{
+    color:#ffd60a;
+}
+
+.logout{
+    cursor:pointer;
+    font-weight:500;
+}
+
+.logout:hover{
+    color:#ff4d6d;
+}
+
+/* Main */
+.main{
+    padding:30px;
+}
+
+/* Topbar */
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.topbar input{
+    width:300px;
+    padding:10px 15px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.profile i{
+    font-size:22px;
+    color:#5a189a;
+}
+
+/* Content Grid */
+.content-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+/* Cards */
+.cards-section{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h4{
+    margin-bottom:10px;
+    color:#5a189a;
+}
+
+/* Info Box */
+.info-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Extra Section */
+.extra-section{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+.progress-box,
+.activity-box,
+.deadline-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.progress-bar{
+    width:100%;
+    height:10px;
+    background:#ddd;
+    border-radius:10px;
+    margin:10px 0;
+}
+
+.progress-fill{
+    width:75%;
+    height:100%;
+    background:#7b2cbf;
+    border-radius:10px;
+}
+
+/* Bottom Section */
+.bottom-section{
+    margin-top:30px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.stat-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card h2{
+    color:#5a189a;
+}
+
+/* Table */
+.schedule-preview{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.schedule-preview table{
+    width:100%;
+    margin-top:10px;
+    border-collapse:collapse;
+}
+
+.schedule-preview th,
+.schedule-preview td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+/* Footer */
+.footer{
+    margin-top:30px;
+    text-align:center;
+    padding:15px;
+    color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div>
+            <div class="logo">
+                <i class="fas fa-user-graduate"></i> Student Portal
+            </div>
+
+            <ul class="menu">
+            <li><a herf="dashboard.html">📈 Dashboard</a><br><br></li>
+           <li><a href="payment.html" target="_blank">💳 Payement</a><br></li>
+            <li><a href="registration.html" target="_blank">👤 Signup</a><br></li>
+            <li><a href="courses.html" target="_blank">🎓 Courses</a><br></li>
+            <li><a href="semester.html" target="_blank">❌ Semester</a><br></li>
+            <li><a href="result.html" target="_blank">📊 Result</a><br></li>
+            <li><a href="notice.html" target="_blank">📌 Notice</a><br></li>
+            <li><a href="schedule.html" target="_blank">🗓️ Schedule</a><br></li>
+            <li><a href="attendence.html" target="_blank">📅Attendence</a><br></li>
+            <li><a href="front.html" target="_blank">Backend</a><br></li>
+            <li><a href="back.html" target="_blank">Frontened</a><br></li>
+            <li><a href="database.html" target="_blank">Database</a><br></li>
+            <li><a href="other.html" target="_blank">Other</a><br><br></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <div class="topbar">
+            <input type="text" placeholder="Search...">
+            <div class="profile">
+                <i class="fas fa-user-circle"></i>
+                <span>Indu</span>
+            </div>
+        </div>
+
+        <div class="content-grid">
+
+            <div class="cards-section">
+                <div class="card">
+                    <h4>Attendance</h4>
+                    <p>Track daily presence and academic performance.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Results</h4>
+                    <p>View semester wise results and marks.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Schedule</h4>
+                    <p>Manage your daily and weekly timetable.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Frontend</h4>
+                    <p>All frontend learning materials available.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Backend</h4>
+                    <p>Backend technologies and resources.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Database</h4>
+                    <p>Database concepts and practice labs.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>Dashboard Overview</h3>
+                <p>
+                    This student dashboard provides a centralized platform to manage academic activities efficiently. 
+                    Students can access course materials, monitor attendance, check results, and organize schedules seamlessly. 
+                    Designed with a clean and modern interface for better productivity and user experience.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="extra-section">
+            <div class="progress-box">
+                <h3>Academic Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p>Overall Completion: 75%</p>
+            </div>
+
+            <div class="activity-box">
+                <h3>Recent Activity</h3>
+                <ul>
+                    <li>✔ Submitted Java Assignment</li>
+                    <li>✔ Completed HTML Module</li>
+                    <li>✔ Attendance Updated</li>
+                </ul>
+            </div>
+
+            <div class="deadline-box">
+                <h3>Upcoming Deadlines</h3>
+                <ul>
+                    <li>📌 DBMS Project - March 10</li>
+                    <li>📌 Internal Exams - March 18</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="stats">
+                <div class="stat-card">
+                    <h2>8</h2>
+                    <p>Total Subjects</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>92%</h2>
+                    <p>Attendance</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>3</h2>
+                    <p>Pending Assignments</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>4</h2>
+                    <p>Upcoming Exams</p>
+                </div>
+            </div>
+
+            <div class="schedule-preview">
+                <h3>Weekly Schedule</h3>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Java Programming</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Database Systems</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Web Development</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2026 Student Portal | Designed by Indu 💜
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

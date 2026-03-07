@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Notices</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right,#f3e8ff,#e0c3fc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:white;
+    width:900px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.college-name{
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    color:#5a189a;
+    margin-bottom:5px;
+}
+
+.notice-title{
+    text-align:center;
+    margin-bottom:25px;
+    color:#444;
+    font-size:18px;
+}
+
+/* Notice Card */
+.notice-card{
+    background:#f8f3ff;
+    padding:20px;
+    border-left:5px solid #7b2cbf;
+    border-radius:10px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.notice-card:hover{
+    transform:translateY(-3px);
+}
+
+.notice-card h4{
+    color:#5a189a;
+    margin-bottom:8px;
+}
+
+.notice-date{
+    font-size:13px;
+    color:#777;
+    margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="college-name">
+        Vasireddy Venkatadri Reddy Institute of Technology
+    </div>
+
+    <div class="notice-title">
+        Important Notices & Announcements
+    </div>
+
+    <div class="notice-card">
+        <div class="notice-date">Date: March 01, 2026</div>
+        <h4>Internal Examination Schedule Released</h4>
+        <p>The internal examinations will begin from March 18, 2026. Students are advised to download the timetable from the schedule section.</p>
+    </div>
+
+    <div class="notice-card">
+        <div class="notice-date">Date: February 27, 2026</div>
+        <h4>Hackeathon Participitation</h4>
+        <p>Participated in a hackathon event where we worked as a team to develop a solution for a given problem within a limited time using programming and innovative ideas.</p>
+    </div>
+
+    <div class="notice-card">
+        <div class="notice-date">Date: February 20, 2026</div>
+        <h4>Technical Fest Registration Open</h4>
+        <p>Registrations for the annual technical fest are now open. Interested students can register through the events portal.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

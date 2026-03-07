@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Time Table</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right,#f3e8ff,#e0c3fc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:white;
+    width:1000px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.title{
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    color:#5a189a;
+    margin-bottom:25px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+th{
+    background:#7b2cbf;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.break{
+    background:#f3e8ff;
+    font-weight:600;
+    color:#5a189a;
+}
+
+.lunch{
+    background:#e0c3fc;
+    font-weight:600;
+    color:#5a189a;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">
+        Weekly Time Table (8:20 AM – 3:50 PM)
+    </div>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <tr>
+            <td>8:20 – 9:10</td>
+            <td>Java</td>
+            <td>DBMS</td>
+            <td>OS</td>
+            <td>CN</td>
+            <td>DS</td>
+        </tr>
+
+        <tr>
+            <td>9:10 – 10:00</td>
+            <td>Java</td>
+            <td>DBMS</td>
+            <td>OS</td>
+            <td>CN</td>
+            <td>DS</td>
+        </tr>
+
+        <tr class="break">
+            <td colspan="6">Short Break</td>
+        </tr>
+
+        <tr>
+            <td>10:10 – 11:00</td>
+            <td>Web Tech</td>
+            <td>Java Lab</td>
+            <td>DBMS Lab</td>
+            <td>Web Lab</td>
+            <td>Project</td>
+        </tr>
+
+        <tr>
+            <td>11:00 – 11:50</td>
+            <td>Web Tech</td>
+            <td>Java Lab</td>
+            <td>DBMS Lab</td>
+            <td>Web Lab</td>
+            <td>Project</td>
+        </tr>
+
+        <tr class="lunch">
+            <td colspan="6">Lunch Break</td>
+        </tr>
+
+        <tr>
+            <td>1:30 – 2:20</td>
+            <td>AI</td>
+            <td>Maths</td>
+            <td>AI</td>
+            <td>Maths</td>
+            <td>Seminar</td>
+        </tr>
+
+        <tr>
+            <td>2:20 – 3:10</td>
+            <td>AI</td>
+            <td>Maths</td>
+            <td>AI</td>
+            <td>Maths</td>
+            <td>Seminar</td>
+        </tr>
+
+        <tr class="break">
+            <td colspan="6">Short Break</td>
+        </tr>
+
+        <tr>
+            <td>3:20 – 3:50</td>
+            <td>Library</td>
+            <td>Sports</td>
+            <td>Library</td>
+            <td>Sports</td>
+            <td>Mentoring</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
